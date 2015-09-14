@@ -38,7 +38,6 @@ xtick_labels = (r"$\mu - 3 \sigma$",
 
 fig = plt.figure(1, figsize=(6, 4))
 ax = fig.add_subplot(111)
-
 ax.axhline(0, color='k')
 
 ax.fill_between(x_full, y_full, edgecolor='k', facecolor='0.8')
@@ -58,4 +57,5 @@ ax.text(0, 0.4, '68%', fontsize=12, color='w', va='center', ha='center')
 fig.subplots_adjust(bottom=0.30)
 
 # ax.tick_params(axis='x', which='major', labelsize=10, top='off')
+plt.text(0,-0.5,'Javier Silva, jaaviieeer@live.com')
 plt.savefig('gauss.png')
